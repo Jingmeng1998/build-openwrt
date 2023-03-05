@@ -1,0 +1,223 @@
+
+config smartdns
+	option server_name 'smartdns'
+	option tcp_server '1'
+	option ipv6_server '1'
+	option dualstack_ip_selection '1'
+	option serve_expired '1'
+	option resolve_local_hostnames '1'
+	option force_aaaa_soa '1'
+	option force_https_soa '1'
+	option rr_ttl_min '600'
+	option seconddns_port '6553'
+	option seconddns_tcp_server '1'
+	option seconddns_no_rule_addr '0'
+	option seconddns_no_rule_nameserver '0'
+	option seconddns_no_rule_ipset '0'
+	option seconddns_no_rule_soa '0'
+	option coredump '0'
+	option enable_auto_update '0'
+	option port '5335'
+	option auto_set_dnsmasq '0'
+	option prefetch_domain '1'
+	option seconddns_server_group 'GW'
+	option seconddns_no_speed_check '1'
+	option seconddns_no_cache '1'
+	option seconddns_no_dualstack_selection '0'
+	option seconddns_force_aaaa_soa '0'
+	option cache_size '1073741824 '
+	option old_port '5335'
+	option old_enabled '0'
+	option old_auto_set_dnsmasq '0'
+
+config domain-rule
+	option no_speed_check '0'
+	option force_aaaa_soa '0'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '运营商'
+	option ip '218.104.128.106'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '运营商'
+	option ip '58.22.96.66'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '运营商'
+	option ip '2408:8888::8'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '运营商'
+	option ip '2408:8899::8'
+
+config server
+	option enabled '1'
+	option name '阿里'
+	option ip 'dns.alidns.com/dns-query'
+	option type 'https'
+
+config server
+	option enabled '1'
+	option name '腾讯'
+	option ip 'doh.pub/dns-query'
+	option type 'https'
+
+config server
+	option enabled '1'
+	option name '腾讯'
+	option ip 'sm2.doh.pub/dns-query'
+	option type 'https'
+
+config server
+	option enabled '1'
+	option name '360'
+	option ip 'doh.360.cn/dns-query'
+	option type 'https'
+
+config server
+	option enabled '1'
+	option name '下一代互联网国家工程中心【不稳定】'
+	option ip 'dns.ipv6dns.com/dns-query'
+	option type 'https'
+
+config server
+	option enabled '1'
+	option type 'https'
+	option name 'CFIEC DNS'
+	option ip 'dns.cfiec.net/dns-query'
+
+config server
+	option enabled '1'
+	option type 'https'
+	option exclude_default_group '0'
+	option blacklist_ip '0'
+	option no_check_certificate '0'
+	option name 'chinaipv6 PDNS'
+	option ip 'dns.ipv6dns.com/dns-query'
+
+config server
+	option enabled '1'
+	option type 'https'
+	option exclude_default_group '0'
+	option blacklist_ip '0'
+	option no_check_certificate '0'
+	option name '红鱼rubyfish IPV6 DNS'
+	option ip 'v6.rubyfish.cn/dns-query'
+
+config server
+	option enabled '1'
+	option type 'https'
+	option exclude_default_group '0'
+	option blacklist_ip '0'
+	option no_check_certificate '0'
+	option name '台湾Quad 101'
+	option ip 'dns.twnic.tw/dns-query'
+
+config server
+	option enabled '1'
+	option type 'https'
+	option server_group 'GW'
+	option exclude_default_group '0'
+	option blacklist_ip '0'
+	option no_check_certificate '0'
+	option name 'Google'
+	option ip 'dns.google/dns-query'
+
+config server
+	option enabled '1'
+	option type 'https'
+	option server_group 'GW'
+	option exclude_default_group '0'
+	option blacklist_ip '0'
+	option no_check_certificate '0'
+	option name 'Google'
+	option ip 'dns64.dns.google/dns-query'
+
+config server
+	option enabled '1'
+	option type 'https'
+	option server_group 'GW'
+	option exclude_default_group '0'
+	option blacklist_ip '0'
+	option no_check_certificate '0'
+	option name 'Quad9'
+	option ip 'dns.quad9.net/dns-query'
+
+config server
+	option enabled '1'
+	option type 'https'
+	option server_group 'GW'
+	option exclude_default_group '0'
+	option blacklist_ip '0'
+	option no_check_certificate '0'
+	option name 'OpenDNS'
+	option ip 'doh.opendns.com/dns-query'
+
+config server
+	option enabled '1'
+	option type 'https'
+	option server_group 'GW'
+	option exclude_default_group '0'
+	option blacklist_ip '0'
+	option no_check_certificate '0'
+	option name 'Cloudflare'
+	option ip 'dns.cloudflare.com/dns-query'
+
+config server
+	option enabled '1'
+	option type 'https'
+	option server_group 'GW'
+	option blacklist_ip '0'
+	option no_check_certificate '0'
+	option exclude_default_group '0'
+	option name '日本 IIJ'
+	option ip 'public.dns.iij.jp/dns-query'
+
+config server
+	option enabled '1'
+	option type 'https'
+	option name 'Blahdns 日本节点'
+	option ip 'doh-jp.blahdns.com/dns-query'
+	option server_group 'GW'
+	option exclude_default_group '0'
+	option blacklist_ip '0'
+	option no_check_certificate '0'
+
+config server
+	option enabled '1'
+	option type 'https'
+	option name 'DNS.SB'
+	option ip 'doh.dns.sb/dns-query'
+	option server_group 'GW'
+	option exclude_default_group '0'
+	option blacklist_ip '0'
+	option no_check_certificate '0'
+
+config server
+	option enabled '1'
+	option type 'https'
+	option name 'PowerDNS'
+	option ip 'doh.powerdns.org'
+	option server_group 'GW'
+	option exclude_default_group '0'
+	option blacklist_ip '0'
+	option no_check_certificate '0'
+
+config server
+	option enabled '1'
+	option name 'AdGuard'
+	option ip 'dns.adguard.com/dns-query'
+	option type 'https'
+	option server_group 'GW'
+	option exclude_default_group '1'
+	option blacklist_ip '0'
+	option no_check_certificate '0'
+
